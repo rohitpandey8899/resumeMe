@@ -362,7 +362,7 @@ section {
 		line-height: 20px;
 	}
 	h1 {
-		font-size: 20px;
+		font-size: 13px;
 		line-height: 58px;
 	}
 
@@ -382,8 +382,9 @@ section {
 	}
 
 	h5 {
-		font-size: 17px;
+		font-size: 20px;
 		line-height: 20px;
+		padding:5px;
 	}
 	
 	.clocktitle{
