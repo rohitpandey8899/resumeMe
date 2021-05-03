@@ -1,0 +1,148 @@
+<html lang="en"><head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
+
+
+  <title>CodePen - Loading Animations</title>
+  
+  
+  
+  
+<style>
+html, body {
+    background-color: #182935;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    font-family: 'Roboto' , sans-serif;
+}
+
+.loader {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.loader {
+    min-width: 100px;
+}
+
+/* google style loader */
+
+.google-loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+}
+
+.google-loader-bar {
+    display: inline-block;
+    width: 5px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 2.5px;
+    animation: google-loading 1s ease-in-out infinite;
+    background-color: #ffffff;
+}
+
+.google-loader-bar:nth-child(1) {
+    animation-delay: 0;
+}
+
+.google-loader-bar:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.google-loader-bar:nth-child(3) {
+    animation-delay: .2s;
+}
+
+.google-loader-bar:nth-child(4) {
+    animation-delay: .3s;
+}
+
+@keyframes google-loading {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        transform: scale(1, 2);
+    }
+    50% {
+        transform: scale(1);
+    }
+}
+
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no">
+  <div class="loaders">
+        <div class="loader google-loader">
+            <div class="google-loader-bar"></div>
+            <div class="google-loader-bar"></div>
+            <div class="google-loader-bar"></div>
+            <div class="google-loader-bar"></div>
+        </div>
+
+        <div class="loader simple-loader">
+            <div class="simple-loader-bar"></div>
+            <div class="simple-loader-bar"></div>
+            <div class="simple-loader-bar"></div>
+            <div class="simple-loader-bar"></div>
+            <div class="simple-loader-bar"></div>
+            <div class="simple-loader-bar"></div>
+        </div>
+
+        <div class="loader coloring-circle">
+            <div class="beep-circle"></div>
+            <div class="beep-circle"></div>
+            <div class="beep-circle"></div>
+            <div class="beep-circle"></div>
+            <div class="beep-circle"></div>
+        </div>
+
+        <div class="goo-wrapper">
+            <div class="ball glowing"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
+    </div>
+  
+  
+  
+  
+
+
+
+
+ 
+</body></html>
